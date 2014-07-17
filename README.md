@@ -21,7 +21,9 @@ I do not claim that this method offers a mathematically fool proof means for ran
 3. Select the center of this space as the center of the first circle.
 4. Determine the average center of the packing. For the first circle, the average center is simply the center of itself. For two circles, I find the mean of the x-coordinates and y-coordinates to generate an average (x,y) coordinate. 
 5. I find the radii of the circle-to-be-placed and add that value to the radii of the circle(s) already packed. This allows me to create a region within which I can not place this new circle. 
-6. I place the new circle (a) just outside this exclusion zone and (b) closest to the average position of the centers of the circles already in the packing.   
+6. I place the new circle (a) just outside this exclusion zone and (b) closest to the average position of the circles already in the packing. 
+
+The physical interpretation I had used to approach this problem was the following. Imagine a collection of uniformly charged point particles, each with an  exclusion region dictated by an imaginary radii. Under the condition of no overlap, I find the packing with the maximum amount of potential energy. I perform this process iteratively, adding one circle to the packing at a time. Maximum potential energy corresponds to finding the configuration which minimizes the distance between the centers of the circles.     
 
 
 
